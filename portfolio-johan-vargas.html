@@ -109,7 +109,7 @@
 
   /* VIDEOS */
   #showreel { background: var(--bg2); }
-  .video-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 1.5rem; margin-top: 3rem; }
+  .video-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
   .video-card { background: #0a0d0e; border: 1px solid var(--border); transition: border-color 0.3s; overflow: hidden; }
   .video-card:hover { border-color: rgba(0,212,255,0.3); }
 
@@ -280,6 +280,20 @@
       </div>
     </div>
 
+    <div class="video-card">
+      <div class="video-thumb" onclick="playVideo(this)">
+        <img src="carrete de presentación en miniatura.png" alt="Demo Reel VFX Fusion">
+        <div class="play-btn"><div></div></div>
+      </div>
+      <div class="video-iframe-wrap">
+        <iframe src="https://player.vimeo.com/video/1172771209?autoplay=1&badge=0&color=00d4ff&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <span class="video-title">Demo Reel VFX — Fusion Compositing</span>
+        <span class="video-duration">00:46</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -340,10 +354,10 @@
     <div class="section-label" style="justify-content:center;margin-bottom:2rem;">05 — Contacto</div>
     <img class="contact-logo" src="logo-jv.jpg" alt="JV">
     <p class="contact-tagline">¿Tienes un proyecto? Hablemos.</p>
-    <a href="mailto:zebass23@gmail.com" class="contact-email">zebass23@gmail.com</a>
+    <a href="/cdn-cgi/l/email-protection#2e544b4c4f5d5d1c1d6e49434f4742004d4143" class="contact-email"><span class="__cf_email__" data-cfemail="fd87989f9c8e8ecfcebd9a909c9491d39e9290">[email&#160;protected]</span></a>
     <div class="contact-platforms">
       <a href="https://www.behance.net/sebastianvargas" class="platform-link" target="_blank">Behance</a>
-      <a href="https://vimeo.com/user" class="platform-link" target="_blank">Vimeo</a>
+      <a href="https://vimeo.com/1172771209" class="platform-link" target="_blank">Vimeo</a>
       <a href="https://www.workana.com" class="platform-link" target="_blank">Workana</a>
     </div>
   </div>
@@ -355,15 +369,9 @@
   <span>DaVinci · Blender · Passion</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function playVideo(thumb) {
     thumb.style.display = "none";
     thumb.nextElementSibling.style.display = "block";
   }
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(el => { if (el.isIntersecting) el.target.classList.add("visible"); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+  const observer = new IntersectionOb
